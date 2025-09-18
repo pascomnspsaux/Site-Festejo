@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festejo de Santa Teresinha</title>
+    <!-- Carrega o Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carrega as fontes personalizadas do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Carrega a biblioteca Font Awesome para ícones de redes sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+        /* Estilos personalizados com base na paleta de cores e tipografia */
+        :root {
+            --rosa-claro: #F8C8DC;
+            --branco: #FFFFFF;
+            --dourado-suave: #D4AF37;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--rosa-claro);
+            color: #333;
+        }
+        .dancing-script {
+            font-family: 'Dancing Script', cursive;
+        }
+        .bg-dourado {
+            background-color: var(--dourado-suave);
+        }
+        .text-dourado {
+            color: var(--dourado-suave);
+        }
+
+    </style>
+</head>
+<body class="bg-rose-50 font-sans leading-relaxed">
+
+<!-- Cabeçalho (Header) com logo, título e menu -->
+<header class="bg-white/70 backdrop-blur-md sticky top-0 z-50 shadow-md">
+  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    
+    <!-- Logo e Título -->
+    <div class="flex items-center space-x-3">
+      <img src="logo.png" 
+           alt="Logo da Paróquia Nossa Senhora do Perpétuo Socorro" 
+           class="w-12 h-12 rounded-full shadow-md object-cover">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold dancing-script text-pink-700">
+        Festejo de Santa Teresinha
+      </h1>
+    </div>
+  </div>
+</header>
+
+    <main class="container mx-auto px-4 py-8 md:py-16">
+        
+        <!-- Seção da Página Inicial -->
+        <section id="inicio" class="text-center mb-16">
+            <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg">
+                <!-- Banner com imagem de Santa Teresinha e tema -->
+<div class="relative mb-8 rounded-xl overflow-hidden shadow-lg">
+    <img src="Cabeçalho.png" alt="Banner do Festejo" class="w-full h-auto">
+    <div class="absolute inset-0 flex items-center justify-center bg-black/"></div>
+    <div class="drop-shadow-lg p-4 text-center">
+        <h2 class="text-3xl sm:text-5xl md:text-6xl dancing-script text-pink-700 mb-5">
+            Bem-vindo ao Festejo de Santa Teresinha
+        </h2>
+        <p class="mt-2 text-xl sm:text-2xl font-light text-pink-700">
+            De 22 de setembro a 01 de outubro
+        </p>
+    </div>
+</div>
+                <p class="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto mb-6">
+                    A alegria do Festejo de Santa Teresinha nos une em oração e fraternidade. Convidamos você a viver conosco essa linda jornada de fé e partilha.
+                </p>
+                <!-- Botões principais -->
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#programacao" class="bg-dourado text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-yellow-600 transition-colors">
+                        Programação
+                    </a>
+                    <a href="#novena" class="bg-dourado text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-yellow-600 transition-colors">
+                        Novena
+                    </a>
+                    <a href="#trinta-dias" class="bg-dourado text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-yellow-600 transition-colors">
+                        30 Dias
+                    </a>
+                    <a href="#parte-social" class="bg-dourado text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-yellow-600 transition-colors">
+                        Parte Social
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Importando CSS e JS do Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Importando CSS e JS do Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Seção Carrossel -->
+<section id="galeria" class="text-center mb-16">
+  
+  <div class="swiper max-w-4xl mx-auto rounded-2xl shadow-lg">
+    <!-- Wrapper das imagens -->
+      
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="foto1.jpg" alt="Imagem 1" class="w-full rounded-2xl">
+      </div>
+      <div class="swiper-slide">
+        <img src="foto2.jpg" alt="Imagem 2" class="w-full rounded-2xl">
+      </div>
+      <div class="swiper-slide">
+        <img src="foto5.jpg" alt="Imagem 5" class="w-full rounded-2xl">
+      </div>
+      <div class="swiper-slide">
+        <img src="foto4.jpeg" alt="Imagem 4" class="w-full rounded-2xl">
+      </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Paginação (bolinhas) -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- Seção de Doação -->
+<section id="doacao" class="text-center mb-16">
+  <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">Faça sua Doação</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    
+    <!-- Doação para o Festejo -->
+    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center">
+      <h3 class="text-2xl font-bold text-pink-700 mb-4">Doe para o nosso Festejo</h3>
+      <p class="text-gray-700 mb-4">
+        Escaneie o QR Code e faça sua doação. <br>
+        Cada gesto de generosidade ajuda a tornar nosso festejo ainda mais especial!
+      </p>
+      <div class="flex justify-center">
+        <img src="img/qrcode-festejo.png" alt="QR Code Festejo" class="w-40 h-40">
+      </div>
+    </div>
+
+    <!-- Doação de uma Rosa -->
+    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center">
+      <h3 class="text-2xl font-bold text-pink-700 mb-4">Doe uma Rosa</h3>
+      <p class="text-gray-700 mb-4">
+        Participe da nossa <strong>Chuva de Rosas</strong> doando o valor de uma rosa pelo QR Code. <br>
+        Seu gesto de amor ajuda a tornar esse momento ainda mais especial no dia da nossa padroeira.
+      </p>
+      <div class="flex justify-center">
+        <img src="img/qrcode-rosa.png" alt="QR Code Rosa" class="w-40 h-40">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Inicialização do Swiper -->
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true, // volta para o início
+    autoplay: {
+      delay: 3000, // muda de imagem a cada 3 segundos
+      disableOnInteraction: false, // continua passando mesmo se clicar nas setas
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+        <!-- Seção de Programação com cards detalhados -->
+<section id="programacao" class="text-center mb-16">
+  <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">Programação do Festejo</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- 1º Dia da Novena -->
+    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+      <div class="bg-dourado text-white text-2xl font-bold py-2 px-4 rounded-full inline-block mb-4">22/09</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">1º Dia da Novena e Santa Missa</h3>
+      <p class="text-gray-600 mb-2"><strong>Novena:</strong> 19h</p>
+      <p class="text-gray-600 mb-2"><strong>Santa Missa:</strong> 19h30</p>
+      <p class="text-gray-600 mb-2"><strong>Celebrante:</strong> Pe. Vitor Chaves</p>
+      <p class="text-gray-600 mb-2"><strong>Noitários:</strong> Comunidade São José, Comunidade Sagrada Família</p>
+      <p class="text-gray-600">Abertura solene com a primeira noite de novena, seguida da celebração da Santa Missa.</p>
+    </div>
+
+    <!-- 2º Dia da Novena -->
+    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+      <div class="bg-dourado text-white text-2xl font-bold py-2 px-4 rounded-full inline-block mb-4">23/09</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">2º Dia da Novena</h3>
+      <p class="text-gray-600 mb-2"><strong>Novena:</strong> 19h</p>
+      <p class="text-gray-600 mb-2"><strong>Santa Missa:</strong> 19h30</p>
+      <p class="text-gray-600 mb-2"><strong>Celebrante:</strong> Pe. Tiago Fernandes</p>
+      <p class="text-gray-600 mb-2"><strong>Noitários:</strong> Catequese, Pastoral da Criança</p>
+      <p class="text-gray-600">Noite dedicada às crianças, com a participação da catequese.</p>
+    </div>
+
+    <!-- 3º Dia da Novena -->
+    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+      <div class="bg-dourado text-white text-2xl font-bold py-2 px-4 rounded-full inline-block mb-4">24/09</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">3º Dia da Novena</h3>
+      <p class="text-gray-600 mb-2"><strong>Novena:</strong> 19h</p>
+      <p class="text-gray-600 mb-2"><strong>Santa Missa:</strong> 19h30</p>
+      <p class="text-gray-600 mb-2"><strong>Celebrante:</strong> Pe. Rafael Menezes</p>
+      <p class="text-gray-600 mb-2"><strong>Noitários:</strong> Comunidade Nossa Senhora Aparecida</p>
+      <p class="text-gray-600">Celebração e noite social com a tradicional música ao vivo.</p>
+    </div>
+
+    <!-- 4º Dia da Novena -->
+    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+      <div class="bg-dourado text-white text-2xl font-bold py-2 px-4 rounded-full inline-block mb-4">25/09</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">4º Dia da Novena</h3>
+      <p class="text-gray-600 mb-2"><strong>Novena:</strong> 19h</p>
+      <p class="text-gray-600 mb-2"><strong>Santa Missa:</strong> 19h30</p>
+      <p class="text-gray-600 mb-2"><strong>Celebrante:</strong> Pe. Francisco Assis</p>
+      <p class="text-gray-600 mb-2"><strong>Noitários:</strong> Pastoral da Caridade, Vicentinos</p>
+      <p class="text-gray-600">Noite da Caridade, com arrecadação de alimentos para as famílias carentes.</p>
+    </div>
+
+    <!-- 5º Dia da Novena -->
+    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+      <div class="bg-dourado text-white text-2xl font-bold py-2 px-4 rounded-full inline-block mb-4">26/09</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">5º Dia da Novena</h3>
+      <p class="text-gray-600 mb-2"><strong>Novena:</strong> 19h</p>
+      <p class="text-gray-600 mb-2"><strong>Santa Missa:</strong> 19h30</p>
+      <p class="text-gray-600 mb-2"><strong>Celebrante:</strong> Diácono Carlos Almeida</p>
+      <p class="text-gray-600 mb-2"><strong>Noitários:</strong> Comunidade São Francisco, Juventude</p>
+      <p class="text-gray-600">Celebração especial com a presença de devotos de outras paróquias.</p>
+    </div>
+
+    <!-- 6º Dia da Novena -->
+    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+      <div class="bg-dourado text-white text-2xl font-bold py-2 px-4 rounded-full inline-block mb-4">27/09</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">6º Dia da Novena</h3>
+      <p class="text-gray-600 mb-2"><strong>Novena:</strong> 19h</p>
+      <p class="text-gray-600 mb-2"><strong>Santa Missa:</strong> 19h30</p>
+      <p class="text-gray-600 mb-2"><strong>Celebrante:</strong> Pe. Rodrigo Vilarins</p>
+      <p class="text-gray-600 mb-2"><strong>Noitários:</strong> Pastoral da Saúde, Terço dos Homens</p>
+      <p class="text-gray-600">Missa e novena em honra aos idosos e enfermos.</p>
+    </div>
+
+    <!-- 7º Dia da Novena -->
+    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+      <div class="bg-dourado text-white text-2xl font-bold py-2 px-4 rounded-full inline-block mb-4">28/09</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">7º Dia da Novena e Leilão</h3>
+      <p class="text-gray-600 mb-2"><strong>Novena:</strong> 19h</p>
+      <p class="text-gray-600 mb-2"><strong>Santa Missa:</strong> 19h30</p>
+      <p class="text-gray-600 mb-2"><strong>Celebrante:</strong> Pe. Gustavo Henrique</p>
+      <p class="text-gray-600 mb-2"><strong>Noitários:</strong> Comunidade Santo Antônio, Apostolado da Oração</p>
+      <p class="text-gray-600">Missa com o grande leilão beneficente após a celebração.</p>
+    </div>
+
+    <!-- 8º Dia da Novena -->
+    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+      <div class="bg-dourado text-white text-2xl font-bold py-2 px-4 rounded-full inline-block mb-4">29/09</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">8º Dia da Novena e Bingo</h3>
+      <p class="text-gray-600 mb-2"><strong>Novena:</strong> 19h</p>
+      <p class="text-gray-600 mb-2"><strong>Santa Missa:</strong> 19h30</p>
+      <p class="text-gray-600 mb-2"><strong>Celebrante:</strong> Pe. Paulo Cesar</p>
+      <p class="text-gray-600 mb-2"><strong>Noitários:</strong> Legião de Maria, Comunidade São João Batista</p>
+      <p class="text-gray-600">Missa com a realização do tradicional bingo após a celebração.</p>
+    </div>
+
+    <!-- 9º Dia da Novena -->
+    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+      <div class="bg-dourado text-white text-2xl font-bold py-2 px-4 rounded-full inline-block mb-4">30/09</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">9º Dia da Novena</h3>
+      <p class="text-gray-600 mb-2"><strong>Novena:</strong> 19h</p>
+      <p class="text-gray-600 mb-2"><strong>Santa Missa:</strong> 19h30</p>
+      <p class="text-gray-600 mb-2"><strong>Celebrante:</strong> Pe. Rodrigo Diniz</p>
+      <p class="text-gray-600 mb-2"><strong>Noitários:</strong> Comunidade Santa Luzia, Pastoral Familiar</p>
+      <p class="text-gray-600">Encerramento da novena e preparação para o grande dia da festa.</p>
+    </div>
+
+    <!-- Dia de Santa Teresinha -->
+    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg col-span-1 md:col-span-2 lg:col-span-1">
+      <div class="bg-pink-500 text-white text-2xl font-bold py-2 px-4 rounded-full inline-block mb-4">01/10</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">Dia de Santa Teresinha do Menino Jesus</h3>
+      <p class="text-gray-600 mb-2"><strong>Novena:</strong> 18h</p>
+      <p class="text-gray-600 mb-2"><strong>Missa das Rosas:</strong> 19h30</p>
+      <p class="text-gray-600 mb-2"><strong>Celebrante:</strong> Dom José de Deus</p>
+      <p class="text-gray-600 mb-2"><strong>Noitários:</strong> Toda a comunidade paroquial</p>
+      <p class="text-gray-600 font-bold text-pink-700">Ponto alto do festejo com a tradicional Chuva de Rosas na entrada da procissão!</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Seção Novena das Rosas -->
+<section id="novena" class="text-center mb-16">
+    <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">Novena das Rosas</h2>
+    <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg mx-auto text-left">
+
+        <!-- Ladainha -->
+        <h3 class="text-2xl font-bold text-pink-700 mb-4" style=text-align:center>LADAINHA</h3>
+        <div class="bg-rose-100 rounded-lg p-6 mb-6">
+            <p class="text-gray-700 mb-2">Senhor, tende piedade de nós.<br>
+            Jesus Cristo, tende piedade de nós.<br>
+            Senhor, tende piedade de nós.<br>
+            Jesus Cristo, ouvi-nos.<br>
+            Jesus Cristo, atendei-nos.</p>
+
+            <p class="text-gray-700 mb-2">Deus, Pai do Céu, tende piedade de nós.<br>
+            Deus Filho, que nos remistes, tende piedade de nós.<br>
+            Deus Santificador, tende piedade de nós.<br>
+            Trindade Santa, um só Deus, tende piedade de nós.</p>
+
+            <p class="text-gray-700 mb-2">Teresinha do Cristo Menino, Teresinha rogai por nós.<br>
+            Casta flor do jardim do Carmelo, Teresinha rogai por nós.<br>
+            Meiga esposa de Jesus amante, Teresinha rogai por nós.</p>
+
+            <p class="text-gray-700 font-semibold">Rogai por nós, rogai por nós.<br>
+            Teresinha, rogai por nós.</p>
+
+            <p class="text-gray-700 mb-2">Serva humilde do Rei do universo, Teresinha rogai por nós.<br>
+            Grande ouvinte do Verbo encarnado, Teresinha rogai por nós.<br>
+            Eterna amante de Cristo adorado, Teresinha rogai por nós.</p>
+
+            <p class="text-gray-700 font-semibold">Rogai por nós, rogai por nós.<br>
+            Teresinha, rogai por nós.</p>
+
+            <p class="text-gray-700 mb-2">Mestra insígnia da pequena via, Teresinha rogai por nós.<br>
+            Ó devota da Sagrada Face, Teresinha rogai por nós.<br>
+            Ó modelo de amor dedicado, Teresinha rogai por nós.</p>
+
+            <p class="text-gray-700 font-semibold">Rogai por nós, rogai por nós.<br>
+            Teresinha, rogai por nós.</p>
+
+            <p class="text-gray-700 mb-2">Clara guia das singelas almas, Teresinha rogai por nós.<br>
+            Luz suave no seio da Igreja, Teresinha rogai por nós.<br>
+            Grande exemplo de fé e esperança, Teresinha rogai por nós.</p>
+
+            <p class="text-gray-700 font-semibold">Rogai por nós, rogai por nós.<br>
+            Teresinha, rogai por nós.</p>
+
+            <p class="text-gray-700 mb-2">O modelo de confiança em Deus, Teresinha rogai por nós.<br>
+            Intercessora dos sacerdotes, Teresinha rogai por nós.<br>
+            Padroeira das santas missões, Teresinha rogai por nós.<br>
+            Serva de Deus e amiga dos homens, Teresinha rogai por nós.</p>
+
+            <p class="text-gray-700 font-semibold">Rogai por nós, rogai por nós.<br>
+            Teresinha, rogai por nós.</p>
+        </div>
+
+<!-- Oração -->
+<h3 class="text-2xl font-bold text-pink-700 mb-4" style="text-align:center">ORAÇÃO</h3>
+<div class="bg-rose-100 rounded-lg p-6 mb-6">
+    <p class="text-gray-700 mb-4">
+        Senhor Jesus, vós que conduzistes Santa Teresinha no caminho da santidade, por meio de uma vida simples e dedicada a fazer coisas pequenas e com muito amor, dai-me a graça de seguir seus exemplos na prática do bem.
+    </p>
+    <p class="text-gray-700 mb-4">
+        A vós recorro, Santa Teresinha, para que alcanceis de Deus a graça da paz de espírito, a paciência e bondade com todos os meus irmãos. 
+        De maneira especial vos recomendo <em>(mencionar as pessoas por quem deseja rezar, ou pessoas que lhe são difíceis)</em>.
+    </p>
+    <p class="text-gray-700 mb-4">
+        Bondosa Santa Teresinha, com docilidade deixastes Jesus guiar vossos passos, ajudai-me também a ter a mesma generosidade em cumprir o que Deus deseja de mim, a fazer sua santa vontade; dai-me força nas adversidades; paciência nas contrariedades e tribulações; confiança em Deus e o sincero arrependimento de meus pecados. 
+        Santa Teresinha, sede minha companheira nesta vida, para honra e glória de Jesus.
+    </p>
+    <p class="text-gray-700 font-bold">
+        Amém.
+    </p>
+</div>
+
+        <!-- Hino -->
+        <h3 class="text-2xl font-bold text-pink-700 mb-4" style=text-align:center>HINO</h3>
+        <div class="bg-rose-100 rounded-lg p-6">
+            <p class="text-gray-700 mb-4">
+                <span class="font-semibold">1.</span> Quando ela nasceu sentiram de rosas um cheiro bom, <br>
+                todos os jardins refloriram na cidade de Alesson, <br>
+                rosas foram seus brinquedos e sua doce alegria, <br>
+                rosas colhidas bem cedo para Jesus e Maria. <br><br>
+
+                No céu sua mão formosa, Jesus o bom jardineiro,<br>
+                confiou no canteiro das rosas o seu mais belo canteiro,<br>
+                e as almas angustiosas bradão na terra santinha,<br>
+                Teresinha nos manda rosas, rosas, rosas Teresinha.
+            </p>
+
+            <p class="text-gray-700 mb-4">
+                <span class="font-semibold">2.</span> Quando ela entrou no Carmelo, o seu jardim refloriu,<br>
+                tomou um aspecto tão belo como jamais ninguém viu,<br>
+                rosas foram pressurosas sem cessar em profusão,<br>
+                todos recebem suas rosas e lhe dão o coração.
+            </p>
+
+            <p class="text-gray-700">
+                <span class="font-semibold">3.</span> E de rosas perfumosas tão cheio o canteiro está,<br>
+                que quanto mais saem rosas, mais rosas o jardim dá,<br>
+                dar rosas todo ano sem cessar em profusão,<br>
+                é um mistério arcano, rosas inverno e verão.
+            </p>
+        </div>
+    </div>
+</section>
+
+       <!-- Seção 30 Dias com Santa Teresinha -->
+<section id="trinta-dias" class="text-center mb-16">
+    <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">
+        30 Dias com Santa Teresinha
+    </h2>
+
+    <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg">
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
+            Em preparação para o Centenário da Canonização, vamos embarcar em uma jornada diária de reflexão e espiritualidade.
+        </p>
+        
+        <!-- Reflexão dinâmica -->
+        <div id="reflection-box" class="flex flex-col items-center gap-6 mb-6">
+            <div id="reflection-output" class="bg-rose-50 p-6 rounded-xl shadow-md w-full">
+                <p class="text-gray-700 text-lg mb-4">
+        Durante os 30 dias do Festejo, estaremos postando <span class="font-semibold text-pink-700">vídeos curtos e diários</span> no nosso Instagram. 
+        Cada vídeo trará reflexões inspiradoras e apresentará a vida de <span class="font-semibold text-pink-700">Santa Teresinha</span>, 
+        baseadas em um <span class="italic">manuscrito autoral</span>, para que possamos juntos mergulhar na espiritualidade da “Santa das Rosas”.
+    </p>
+    <a href="https://www.instagram.com/perpetuosocorroaux?igsh=MWVrcGt5MXcxOWlvZQ==" 
+       target="_blank" 
+       class="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition-transform">
+        <!-- Ícone Instagram -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+            <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.25-.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0z"/>
+        </svg>
+        Acompanhe no Instagram
+    </a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+        <!-- Seção Parte Social -->
+        <section id="parte-social" class="text-center mb-16">
+            <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">Nossas Noites de Convivência</h2>
+            <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg">
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
+                    Música, alegria e pratos típicos para celebrar a nossa comunidade.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <!-- Seção de Cardápio -->
+                    <div class="text-left">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4" style="text-align: center;">Cardápio das Noites</h3>
+                        <ul class="text-gray-700 list-disc list-inside" style="text-align: center;">
+                            <li>Churrasco e espetinhos --- <span class="font-bold text-dourado">R$ 15,00</span></li>
+                            <li>Pastel e salgados diversos --- <span class="font-bold text-dourado">R$ 5,00</span></li>
+                            <li>Bolo e doces típicos --- <span class="font-bold text-dourado">R$ 8,00</span></li>
+                            <li>Refrigerantes e sucos ---- <span class="font-bold text-dourado">R$ 7,00</span></li>
+                        </ul>
+                    </div>
+                    <!-- Seção de Atrações -->
+                    <div class="text-left">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4" style="text-align: center;">Agenda de Atrações</h3>
+                        <p class="text-gray-700 mb-2" style="text-align: center;"><strong>24/09:</strong> Música ao vivo com a banda Anjos do Céu.</p>
+                        <p class="text-gray-700 mb-2" style="text-align: center;"><strong>28/09:</strong> Grande Leilão de prendas e brindes.</p>
+                        <p class="text-gray-700" style="text-align: center;"><strong>30/09:</strong> Bingo e sorteio de prêmios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Seção de História -->
+<section id="historia" class="text-center mb-16">
+  <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">História e Devoção</h2>
+  
+  <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg space-y-10 text-left">
+    
+    <!-- Quem foi Santa Teresinha -->
+    <div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Quem foi Santa Teresinha do Menino Jesus?</h3>
+      <p class="text-gray-700 mb-4">
+        Santa Teresinha do Menino Jesus e da Sagrada Face foi uma jovem carmelita com alma missionária, que desejava ardentemente viver e morrer por Cristo. 
+        Viveu na França entre 1873 e 1897, falecendo precocemente aos 24 anos devido à tuberculose. 
+        Seu coração ardia por Jesus e, em tudo o que fazia, mesmo nos pequenos gestos, oferecia amor a Ele. 
+        Seu legado é a <strong>infância espiritual</strong>, um caminho de simplicidade e confiança total em Deus.
+      </p>
+      <p class="text-gray-700 italic border-l-4 border-pink-500 pl-4">"A minha vocação é o amor! No coração da Igreja, eu serei o amor."</p>
+    </div>
+
+    <!-- Infância -->
+    <div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">A Infância</h3>
+      <p class="text-gray-700">
+        Nascida como <em>Maria Francisca Teresa Martin</em>, em 02 de janeiro de 1873, em Alençon (França), 
+        Teresinha era a caçula de oito filhos de <strong>São Luís Martin</strong> e <strong>Santa Zélia Guérin</strong>, 
+        pais devotos e aspirantes à santidade, canonizados em 2015. 
+        Com apenas 4 anos, perdeu sua mãe para o câncer e, com o tempo, viu suas irmãs ingressarem no convento, 
+        enquanto seu pai enfrentava problemas de saúde mental. 
+        Toda essa dor fez com que Teresinha se abandonasse cada vez mais à Divina Providência.
+      </p>
+    </div>
+
+    <!-- Nossa Senhora do Sorriso -->
+    <div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Nossa Senhora do Sorriso</h3>
+      <p class="text-gray-700">
+        Aos 10 anos, Teresinha recebeu uma graça especial: uma experiência mística com a Virgem Maria. 
+        Ela testemunhou: <em>“A Santíssima Virgem sorriu para mim. Foi por causa das orações que eu tive a graça do sorriso da Rainha do Céu.”</em> 
+        Este episódio marcou sua cura interior e transformou sua vida espiritual.
+      </p>
+    </div>
+
+    <!-- Conversão no Natal -->
+    <div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Conversão no Natal</h3>
+      <p class="text-gray-700">
+        Aos 13 anos, no Natal, Teresinha viveu uma profunda experiência de conversão. 
+        Ela compreendeu que o Menino Jesus era a verdadeira fonte de mudança interior, 
+        e esse momento marcou o início de uma nova etapa em sua vida espiritual.
+      </p>
+    </div>
+
+    <!-- Do Carmelo à Morte -->
+    <div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Do Carmelo à Morte</h3>
+      <p class="text-gray-700">
+        Aos 15 anos, entrou para o Carmelo de Lisieux após suplicar pessoalmente a autorização do Papa Leão XIII. 
+        Ali viveu sua vocação rezando pela Igreja, pelos pecadores e sacerdotes, abraçando sua missão com simplicidade. 
+        Embora desejasse ser missionária, descobriu que sua verdadeira missão era amar e oferecer a Cristo cada pequeno ato de sua vida. 
+        Santa Teresinha faleceu em 1897, aos 24 anos, vítima de tuberculose. 
+        Após 9 anos de vida religiosa, deixou como herança sua espiritualidade da <strong>Pequena Via</strong>, 
+        simbolizada em “espalhar rosas” sobre o mundo.
+      </p>
+    </div>
+    
+  </div>
+</section>
+
+        <!-- Seção de Contato & Redes -->
+        <section id="contato" class="text-center mb-16">
+            <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">Endereço e Redes Sociais</h2>
+            <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg max-w-lg mx-auto">
+                <p class="text-lg text-gray-700 mb-6">
+                    Fique por dentro de tudo! Siga-nos em nossas redes sociais.
+                </p>
+                <!-- Formulário de Contato -->
+                <div class="mb-6">
+                    <!-- Seção de Contato & Redes -->
+<section id="contato" class="text-center mb-16">
+        <p class="text-lg text-gray-700 mb-4">
+        <strong>Endereço da Paróquia:</strong><br>
+        Avenida Santa Teresinha, Setor Santa Teresinha<br>
+        Araguaína Tocantins
+    </p>
+
+    <!-- Botão Localização -->
+    <a href="https://maps.app.goo.gl/HPi3dNjm7rRCTtLMA?g_st=aw" target="_blank"
+       class="bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-md hover:bg-green-700 transition-colors inline-flex items-center">
+        <i class="fas fa-map-marker-alt mr-2"></i>
+        Ver no Mapa
+    </a>                    
+</div>
+
+               <!-- Links e botão de compartilhamento -->
+<div class="flex flex-col items-center gap-4">
+    <div class="flex justify-center space-x-6">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=61567897415728" target="_blank" class="text-4xl text-gray-600 hover:text-blue-500 transition-colors">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/perpetuosocorroaux?igsh=MWVrcGt5MXcxOWlvZQ==" target="_blank" class="text-4xl text-gray-600 hover:text-pink-500 transition-colors">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/+5563992885129" target="_blank" class="text-4xl text-gray-600 hover:text-green-500 transition-colors">
+            <i class="fab fa-whatsapp-square"></i>
+        </a>
+        <!-- Site -->
+        <a href="https://anaraqueldasilva73-lang.github.io/Site-Festejo/" target="_blank" class="text-4xl text-gray-600 hover:text-purple-500 transition-colors">
+            <i class="fas fa-globe"></i>
+        </a>
+    </div>
+
+</div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-white/70 backdrop-blur-md py-6 text-center text-gray-600">
+        <p>Desenvolvido com fé e carinho para a comunidade.</p>
+    </footer>
+
+    <script>
+
+        // Lógica para a geração de reflexão com a API do Gemini
+        document.getElementById('generate-reflection-btn').addEventListener('click', async () => {
+            const outputDiv = document.getElementById('reflection-output');
+            const buttonText = document.getElementById('button-text');
+            const spinner = document.getElementById('loading-spinner');
+
+            // Exibir o spinner e desabilitar o botão
+            buttonText.textContent = 'Gerando...';
+            spinner.classList.remove('hidden');
+            document.getElementById('generate-reflection-btn').disabled = true;
+
+            outputDiv.innerHTML = '<p class="text-gray-500 italic">Conectando ao céu...</p>';
+
+            const prompt = "Gere uma breve reflexão espiritual de até 50 palavras, inspirada nos ensinamentos de Santa Teresinha do Menino Jesus sobre a pequena via, o amor a Deus e a caridade fraterna. A reflexão deve ser em português e ter um tom acolhedor e inspirador.";
+            let chatHistory = [];
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+            const payload = { contents: chatHistory };
+            const apiKey = "" 
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+            try {
+                let response = null;
+                let retries = 0;
+                const maxRetries = 5;
+                const baseDelay = 1000;
+
+                while (!response && retries < maxRetries) {
+                    try {
+                        response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        if (!response.ok) {
+                            if (response.status === 429) {
+                                // Exponential backoff for rate limiting
+                                const delay = baseDelay * Math.pow(2, retries);
+                                await new Promise(resolve => setTimeout(resolve, delay));
+                                retries++;
+                            } else {
+                                throw new Error(`HTTP error! status: ${response.status}`);
+                            }
+                        }
+                    } catch (error) {
+                        if (retries < maxRetries - 1) {
+                            const delay = baseDelay * Math.pow(2, retries);
+                            await new Promise(resolve => setTimeout(resolve, delay));
+                            retries++;
+                            response = null; // reset response for next loop
+                        } else {
+                            throw error; // re-throw the last error
+                        }
+                    }
+                }
+
+                if (!response) {
+                    throw new Error('Falha ao conectar após várias tentativas.');
+                }
+                
+                const result = await response.json();
+                const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+
+                if (text) {
+                    // Exibir a reflexão gerada
+                    outputDiv.innerHTML = `<p class="text-gray-700 italic">${text}</p>`;
+                } else {
+                    outputDiv.innerHTML = '<p class="text-red-500">Erro: Não foi possível gerar a reflexão. Tente novamente.</p>';
+                }
+
+            } catch (error) {
+                console.error('Erro ao chamar a API do Gemini:', error);
+                outputDiv.innerHTML = '<p class="text-red-500">Erro: Ocorreu um problema ao se conectar. Por favor, tente novamente mais tarde.</p>';
+            } finally {
+                // Restaurar o estado original do botão
+                buttonText.textContent = '✨ Gerar Nova Reflexão ✨';
+                spinner.classList.add('hidden');
+                document.getElementById('generate-reflection-btn').disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
