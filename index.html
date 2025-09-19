@@ -78,6 +78,9 @@
                 </p>
                 <!-- Botões principais -->
                 <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#doação" class="bg-dourado text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-yellow-600 transition-colors">
+                        Doação
+                    </a>
                     <a href="#programacao" class="bg-dourado text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-yellow-600 transition-colors">
                         Programação
                     </a>
@@ -89,6 +92,9 @@
                     </a>
                     <a href="#parte-social" class="bg-dourado text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-yellow-600 transition-colors">
                         Parte Social
+                    </a>
+                    <a href="#contato" class="bg-dourado text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-yellow-600 transition-colors">
+                        Contato
                     </a>
                 </div>
             </div>
@@ -714,115 +720,6 @@
     <footer class="bg-white/70 backdrop-blur-md py-6 text-center text-gray-600">
         <p>Desenvolvido com fé e carinho para a comunidade.</p>
     </footer>
-
-    <script>
-
-        // Lógica para a geração de reflexão com a API do Gemini
-        document.getElementById('generate-reflection-btn').addEventListener('click', async () => {
-            const outputDiv = document.getElementById('reflection-output');
-            const buttonText = document.getElementById('button-text');
-            const spinner = document.getElementById('loading-spinner');
-
-            // Exibir o spinner e desabilitar o botão
-            buttonText.textContent = 'Gerando...';
-            spinner.classList.remove('hidden');
-            document.getElementById('generate-reflection-btn').disabled = true;
-
-            outputDiv.innerHTML = '<p class="text-gray-500 italic">Conectando ao céu...</p>';
-
-            const prompt = "Gere uma breve reflexão espiritual de até 50 palavras, inspirada nos ensinamentos de Santa Teresinha do Menino Jesus sobre a pequena via, o amor a Deus e a caridade fraterna. A reflexão deve ser em português e ter um tom acolhedor e inspirador.";
-            let chatHistory = [];
-            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-
-            const payload = { contents: chatHistory };
-            const apiKey = "" 
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-
-            try {
-                let response = null;
-                let retries = 0;
-                const maxRetries = 5;
-                const baseDelay = 1000;
-
-                while (!response && retries < maxRetries) {
-                    try {
-                        response = await fetch(apiUrl, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(payload)
-                        });
-
-                        if (!response.ok) {
-                            if (response.status === 429) {
-                                // Exponential backoff for rate limiting
-                                const delay = baseDelay * Math.pow(2, retries);
-                                await new Promise(resolve => setTimeout(resolve, delay));
-                                retries++;
-                            } else {
-                                throw new Error(`HTTP error! status: ${response.status}`);
-                            }
-                        }
-                    } catch (error) {
-                        if (retries < maxRetries - 1) {
-                            const delay = baseDelay * Math.pow(2, retries);
-                            await new Promise(resolve => setTimeout(resolve, delay));
-                            retries++;
-                            response = null; // reset response for next loop
-                        } else {
-                            throw error; // re-throw the last error
-                        }
-                    }
-                }
-
-                if (!response) {
-                    throw new Error('Falha ao conectar após várias tentativas.');
-                }
-                
-                const result = await response.json();
-                const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
-
-                if (text) {
-                    // Exibir a reflexão gerada
-                    outputDiv.innerHTML = `<p class="text-gray-700 italic">${text}</p>`;
-                } else {
-                    outputDiv.innerHTML = '<p class="text-red-500">Erro: Não foi possível gerar a reflexão. Tente novamente.</p>';
-                }
-
-            } catch (error) {
-                console.error('Erro ao chamar a API do Gemini:', error);
-                outputDiv.innerHTML = '<p class="text-red-500">Erro: Ocorreu um problema ao se conectar. Por favor, tente novamente mais tarde.</p>';
-            } finally {
-                // Restaurar o estado original do botão
-                buttonText.textContent = '✨ Gerar Nova Reflexão ✨';
-                spinner.classList.add('hidden');
-                document.getElementById('generate-reflection-btn').disabled = false;
-            }
-        });
-    </script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
